@@ -8,12 +8,12 @@
  ![gpu](/sample_output5_gpu.png?raw=true "Sample output (gpu)")
 
 
-Tips:
+### Setup:
 
-[1] Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
+Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
     # Make your path of this script executable (this is mine, change it to your path) :
-    $ chmod +x /home/xiaobai/n/sh/Catch-Err-All/catch_err_all.run #
+    $ chmod +x /home/xiaobai/n/sh/Catch-Err-All/catch_err_all.run
     
     # Make a symlink in /usr/bin/err to yuor script path:
     $ sudo ln -s /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run /usr/bin/err 
@@ -33,25 +33,31 @@ Tips:
     $ ls -l /usr/bin/err
     lrwxrwxrwx 1 root root 53 Ogos 14 17:49 /usr/bin/err -> /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run
 
-[2] Based on above setup, you can also manually type `-holea` option when using `err`, without require you edit left `err` to `erra`.
+### How to use:
 
-[3] This command is wrapper of `grep -niP`, you can add grep option as usual, such as `-r`.
+[1] Based on above setup, you can also manually type `-holea` option when using `err`, without require you edit left `err` to `erra`.
 
-[4] To show all lines, insert one | before closing ' , or use -A/B/C grep options to limit the lines.
+[2] This command is wrapper of `grep -niP`, you can add grep option as usual, such as `-r`.
 
-[5] Use -v to view non-match lines, i.e. normal log.
+[3] To show all lines, insert one | before closing ' , or use -A/B/C grep options to limit the lines.
 
-[6] Patterns like "err" covers both "errno" and "interrupt", but I separate them to easier modify/recognize. You can remove them if you prefer shorter patterns.
+[4] Use -v to view non-match lines, i.e. normal log.
 
-[7] The negate style is in the format:
+### Customization:
+
+[1] Patterns like "err" covers both "errno" and "interrupt", but I separate them to easier modify/recognize. You can remove them if you prefer shorter patterns.
+
+[2] The negate style is in the format:
 
 (?<!negate_prefix_1|negate_prefix_2)wanted(?!negate_postfix_1|negate_postfix_2)
 
 , which the postfix don't have extra "<" unlike prefix.
 
-[8] This command composes of 5 main sections divided by double \\, i.e. (?=\b|_) on right, (?<=\b|_) on left, (?<=\b|_) and (?=\b|_) on both side, \b on left, and nothing on both side. Each of them may divide into subsection by \, to easy to see prefix un/in/...etc—(many words) parts. Note that the patterns shouldn't strict to correct spelling, since log is written by anyone and need to allow incorrect spelling. And of course, nothing I can do if typo in log.
+[3] (?<=\b|_) (opening boundary) and (?=\b|_) (closing boundary) acts as word boundary \b except it allow underscore `_`
 
-[9] The last two are "?" and "!" which normally indicate louder expression in log. But ! exclude <! html tag and `[ !` shell patterns to reduce noises, while still allow != because != quite often used to express something mismatch.
+[4] This command composes of 5 main sections divided by double \\, i.e. (?=\b|_) on right, (?<=\b|_) on left, (?<=\b|_) and (?=\b|_) on both side, \b on left, and nothing on both side. Each of them may divide into subsection by \, to easy to see prefix un/in/...etc—(many words) parts. Note that the patterns shouldn't strict to correct spelling, since log is written by anyone and need to allow incorrect spelling. And of course, nothing I can do if typo in log.
 
-[10] Between '\ , next line \ , or ' , no extra space. Keep in mind don't put double `|`, i.e. `||` manually in the script which causes shows all lines.
+[5] The last two are "?" and "!" which normally indicate louder expression in log. But ! exclude <! html tag and `[ !` shell patterns to reduce noises, while still allow != because != quite often used to express something mismatch.
+
+[6] Between '\ , next line \ , or ' , no extra space. Keep in mind don't put double `|`, i.e. `||` manually in the script which causes shows all lines.
 
