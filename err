@@ -16,7 +16,9 @@ grep --color=auto -niP \
 \
 '|(?<=\b|_)((de|in)[-]?activ|cease|(kernel)panic|in(termittent|terfer|vestigat|fect|finite|sane)'\
 \
-'|(in|un|im)[-_ ]?(perfect|practi)|(un|im)[-_ ]?patie|implicat'\
+'|(in|un|im)[-_ ]?(perfect|practi)'\
+\
+'|(un|im)[-_ ]?patie|implicat'\
 \
 '|(in[-]?|un[-_ ]?)(capab|ability|complet|accurate|correct|appropriate|secur|valid|certain|concern|consisten|suffici|adequate|effect|acces|def|declar|assign|hand|attach|mount|availab|reach|fortunat|support|known|respon|detect|suit|fit|see|found|notic|escap|qualif|finish|safe|guarantee|permit|free|releas|clear|flush|clean|sen[dt]|arriv|deliver|repl(y|ied)|read|toleran|accept|authenti|authoriz|check|test|protect|intend|do|necessary|us(e|i|[- ]?abl)|desire|recogniz|common|usual|equal|match|determin|success)'\
 \
