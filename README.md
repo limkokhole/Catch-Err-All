@@ -27,7 +27,7 @@ Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
 [3] Based on above setup, you can also manually type `-holea` option when using `err`, without require you edit left `err` to `erra`.
 
-[4] This command is wrapper of `grep -niP`, you can add grep option as usual, such as `-r`.
+[4] This command is wrapper of `grep --color=auto -niP`, you can add grep option as usual, such as `-r`.
 
 [5] In addition `erra`, use `-A`/`-B`/`-C` grep options with `err`(not `erra`) to limit the lines.
 
