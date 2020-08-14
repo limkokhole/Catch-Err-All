@@ -12,9 +12,11 @@ Tips:
 
 [1] Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
-    $ chmod +x /home/xiaobai/n/sh/Catch-Err-All/catch_err_all.run # change to your path of this script
+    # Make your path of this script executable (this is mine, change it to your path) :
+    $ chmod +x /home/xiaobai/n/sh/Catch-Err-All/catch_err_all.run #
     
-    $ sudo ln -s /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run /usr/bin/err # create a symlink in /usr/bin/err
+    # Make a symlink in /usr/bin/err to yuor script path:
+    $ sudo ln -s /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run /usr/bin/err 
     
     # Append alias or function in your shell startup script, such as ~/.bash_aliases , e.g.:
     $ echo -e 'function erra() {\n\terr -holea "$@"\n}\nexport erra' >> ~/.bash_aliases
