@@ -43,9 +43,9 @@ Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
 [4] This command is wrapper of `grep -niP`, you can add grep option as usual, such as `-r`.
 
-[5] In addition `erra`, use -A/B/C grep options with `err`(not `erra`) to limit the lines.
+[5] In addition `erra`, use `-A`/`-B`/`-C` grep options with `err`(not `erra`) to limit the lines.
 
-[6] Use -v to view non-match lines, i.e. normal log.
+[6] Use `-v` to view non-match lines, i.e. normal log.
 
 [7] To grep files which requires root permission, simply do:
 
@@ -53,7 +53,7 @@ Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
         
     - 2nd method: run `sudo -s` session` first.  
         
-    - 3rd method: Remove function in setup step, add`alias erra='err -holea'` AND `alias exsudo='sudo '` in ~/.bash_aliases, then do `exsudo erra`.  
+    - 3rd method: Remove function in ~/.bash_aliases from setup step, add `alias erra='err -holea'` AND `alias exsudo='sudo '` in ~/.bash_aliases, then do `exsudo erra`.  
 
 ### Customization:
 
