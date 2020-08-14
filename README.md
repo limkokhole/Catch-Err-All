@@ -23,7 +23,7 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 [1] Similar to `grep`, i.e. `err /var/log/syslog`, `adb logcat | err`, `tail -f /var/log/syslog | err`
 
-[2] `erra` to show all lines, such as `dmesg | erra`. 
+[2] `erra` to show all lines, such as `dmesg | erra`, `adb logcat | erra`. 
 
 [3] Based on above setup, you can also manually type `-all` option when using `err`, without require you edit left `err` to `erra`.
 
