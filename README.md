@@ -45,7 +45,7 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 [3] `(?<=\b|_)` (opening boundary) and `(?=\b|_)` (closing boundary) acts as word boundary `\b` except it allow underscore `_`
 
-[4] This command composes of 5 main sections divided by double \\, i.e. (?=\b|_) on right, (?<=\b|_) on left, (?<=\b|_) and (?=\b|_) on both side, \b on left, and nothing on both side. Each of them may divide into subsection by \, to easy to see prefix un/in/...etc—(many words) parts. Note that the patterns shouldn't strict to correct spelling, since log is written by anyone and need to allow incorrect spelling. And of course, nothing I can do if typo in log.
+[4] This command composes of 5 main sections divided by double `\\`, i.e. `(?=\b|_)` on right, `(?<=\b|_)` on left, `(?<=\b|_)` and `(?=\b|_)` on both side, `\b` on both side, and nothing on both side. Each of them may divide into subsection by `\`, to easy to see prefix un/in/...etc—(many words) parts. Note that the patterns shouldn't strict to correct spelling, since log is written by anyone and need to allow incorrect spelling. And of course, nothing I can do if typo in log.
 
 [5] The last two are "?" and "!" which normally indicate louder expression in log. But ! exclude <! html tag and `[ !` shell patterns to reduce noises, while still allow != because != quite often used to express something mismatch.
 
