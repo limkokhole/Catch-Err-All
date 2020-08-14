@@ -34,6 +34,6 @@ Tips:
     erra is aliased to `err -holea'
     $ type -a err
     err is /usr/bin/err
-    $ l /usr/bin/err
-    8653011 lrwxrwxrwx 1 root root ? 53 Ogos 14 17:49 /usr/bin/err -> /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run*
+    $ ls -l /usr/bin/err
+    lrwxrwxrwx 1 root root 53 Ogos 14 17:49 /usr/bin/err -> /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run
 
