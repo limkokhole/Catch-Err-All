@@ -1,5 +1,5 @@
 # Catch-Err-All
- An universal command to quick check potential errors and interesting part in any source of log.
+ A universal command to quick check potential errors and interesting part in any source of log.
 
  ![Android](/sample_output1_android.png?raw=true "Sample output (Android)")
  ![Syslog](/sample_output2_syslog.png?raw=true "Sample output (syslog 1)")
