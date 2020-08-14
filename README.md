@@ -47,7 +47,7 @@ Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
 [6] Use `-v` to view non-match lines, i.e. normal log.
 
-[7] To grep files which requires root permission, simply do:
+[7] To grep files which requires root permission, either of 3 methods:
 
     - 1st method: `sudo cat -v /var/log/plymouth-debug.log | erra`.  
         
