@@ -31,7 +31,7 @@ Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
 [5] In addition `erra`, use `-A`/`-B`/`-C` grep options with `err`(not `erra`) to limit the lines.
 
-[6] Use `-v` to view non-match lines, i.e. normal log.
+[6] Use `err -v` to view non-match lines, i.e. normal log.
 
 ### Customization:
 
