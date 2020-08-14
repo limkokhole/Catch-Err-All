@@ -13,12 +13,9 @@
 Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
     $ git clone https://github.com/limkokhole/Catch-Err-All
-
     $ cd Catch-Err-All
-
     $ chmod +x erra
     $ chmod +x err
-    
     $ sudo ln -s "$PWD"/err /usr/bin/err 
     $ sudo ln -s "$PWD"/erra /usr/bin/erra
 
