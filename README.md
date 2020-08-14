@@ -5,6 +5,7 @@
  ![Syslog](/sample_output2_syslog.png?raw=true "Sample output (syslog 1)")
  ![syslog2](/sample_output3_syslog.png?raw=true "Sample output (syslog 2)")
  ![dmesg](/sample_output4_dmesg.png?raw=true "Sample output (dmesg)")
+ ![gpu](/sample_output5_gpu.png?raw=true "Sample output (gpu)")
 
 
 Tips:
