@@ -37,7 +37,7 @@ Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
 [1] Similar to `grep`, i.e. `err /var/log/syslog`, `adb logcat | err`, `tail -f /var/log/syslog | err`
 
-[2] `erra` to show all lines, such as `dmesg | erra`.
+[2] `erra` to show all lines, such as `dmesg | erra`. 
 
 [3] Based on above setup, you can also manually type `-holea` option when using `err`, without require you edit left `err` to `erra`.
 
@@ -46,6 +46,14 @@ Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 [5] In addition `erra`, use -A/B/C grep options with `err`(not `erra`) to limit the lines.
 
 [6] Use -v to view non-match lines, i.e. normal log.
+
+[7] To grep files which requires root permission, simply do:
+
+    - 1st method: `sudo cat -v /var/log/plymouth-debug.log | erra`.  
+        
+    - 2nd method: run `sudo -s` session` first.  
+        
+    - 3rd method: Remove function in setup step, add`alias erra='err -holea'` AND `alias exsudo='sudo '` in ~/.bash_aliases, then do `exsudo erra`.  
 
 ### Customization:
 
