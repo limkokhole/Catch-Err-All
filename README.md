@@ -4,6 +4,7 @@
  ![Android](/sample_output1_android.png?raw=true "Sample output (Android)")
  ![Syslog](/sample_output2_syslog.png?raw=true "Sample output (syslog 1)")
  ![syslog2](/sample_output3_syslog.png?raw=true "Sample output (syslog 2)")
+ ![dmesg](/sample_output4_dmesg.png?raw=true "Sample output (dmesg)")
 
 
 Tips:
