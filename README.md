@@ -51,7 +51,7 @@ Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
     - 1st method: `sudo cat -v /var/log/plymouth-debug.log | erra`.  
         
-    - 2nd method: run `sudo -s` session` first.  
+    - 2nd method: run `sudo -s` session first.  
         
     - 3rd method: Remove function in ~/.bash_aliases from setup step, add `alias erra='err -holea'` AND `alias exsudo='sudo '` in ~/.bash_aliases, then do `exsudo erra`.  
 
