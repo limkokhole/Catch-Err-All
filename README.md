@@ -10,7 +10,7 @@
 
 ### Setup:
 
-Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
+Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
     $ git clone https://github.com/limkokhole/Catch-Err-All
     $ cd Catch-Err-All
