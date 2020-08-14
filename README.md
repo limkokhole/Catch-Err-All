@@ -25,7 +25,7 @@ Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
 [2] `erra` to show all lines, such as `dmesg | erra`. 
 
-[3] Based on above setup, you can also manually type `-holea` option when using `err`, without require you edit left `err` to `erra`.
+[3] Based on above setup, you can also manually type `-all` option when using `err`, without require you edit left `err` to `erra`.
 
 [4] This command is wrapper of `grep --color=auto -niP`, you can add grep option as usual, such as `-r`.
 

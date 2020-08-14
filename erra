@@ -1,2 +1,2 @@
 #!/bin/bash
-err -holea "$@"
+err -all "$@"
