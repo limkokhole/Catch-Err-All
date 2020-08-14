@@ -28,12 +28,12 @@ Tips:
 
 [8] Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
-    xb@dnxb:~/Downloads$ sudo ln -s /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run /usr/bin/err
-    xb@dnxb:~/Downloads$ type -a erra # Make it alias or function in your shell startup script, such as ~/.bash_aliases
+    $ chmod +x /home/xiaobai/n/sh/Catch-Err-All/catch_err_all.run
+    $ sudo ln -s /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run /usr/bin/err
+    $ type -a erra # Make it alias or function in your shell startup script, such as ~/.bash_aliases
     erra is aliased to `err -holea'
-    xb@dnxb:~/Downloads$ type -a err
+    $ type -a err
     err is /usr/bin/err
-    xb@dnxb:~/Downloads$ l /usr/bin/err
+    $ l /usr/bin/err
     8653011 lrwxrwxrwx 1 root root ? 53 Ogos 14 17:49 /usr/bin/err -> /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run*
-    xb@dnxb:~/Downloads$
 
