@@ -26,7 +26,7 @@ Tips:
 
 [6] The last two are "?" and "!" which normally indicate louder expression in log. But ! exclude <! html tag and `[ !` shell patterns to reduce noises, while still allow != because != quite often used to express something mismatch.
 
-[7] Between '\ , next line \ , or ' , no extra space.
+[7] Between '\ , next line \ , or ' , no extra space. Keep in mind don't put double `|`, i.e. `||` manually in the script which causes shows all lines.
 
 [8] Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
