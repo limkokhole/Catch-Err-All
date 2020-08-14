@@ -12,26 +12,15 @@
 
 Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 
-    # Make your path of this script executable (this is mine, change it to your path) :
-    $ chmod +x /home/xiaobai/n/sh/Catch-Err-All/catch_err_all.run
+    $ git clone https://github.com/limkokhole/Catch-Err-All
+
+    $ cd Catch-Err-All
+
+    $ chmod +x erra
+    $ chmod +x err
     
-    # Make a symlink in /usr/bin/err to yuor script path:
-    $ sudo ln -s /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run /usr/bin/err 
-    
-    # Append alias or function in your shell startup script, such as ~/.bash_aliases , e.g.:
-    $ echo -e 'function erra() {\n\terr -holea "$@"\n}\nexport erra' >> ~/.bash_aliases
-    
-    # Double check the setup :
-    $ type -a erra
-    erra is a function                                                                                                                                    
-    erra ()                                                                                                                                               
-    { 
-        err -holea "$@"
-    }
-    $ type -a err
-    err is /usr/bin/err
-    $ ls -l /usr/bin/err
-    lrwxrwxrwx 1 root root 53 Ogos 14 17:49 /usr/bin/err -> /home/xiaobai/note/sh/Catch-Err-All/catch_err_all.run
+    $ sudo ln -s "$PWD"/err /usr/bin/err 
+    $ sudo ln -s "$PWD"/erra /usr/bin/erra
 
 ### How to use:
 
@@ -46,14 +35,6 @@ Make 2 commands: `erra` (i.e. shows "a"ll lines) and `err` to easy to type:
 [5] In addition `erra`, use `-A`/`-B`/`-C` grep options with `err`(not `erra`) to limit the lines.
 
 [6] Use `-v` to view non-match lines, i.e. normal log.
-
-[7] To grep files which requires root permission, either of 3 methods:
-
-    - 1st method: `sudo cat -v /var/log/plymouth-debug.log | erra`.  
-        
-    - 2nd method: run `sudo -s` session first.  
-        
-    - 3rd method: Remove function in ~/.bash_aliases from setup step, add `alias erra='err -holea'` AND `alias exsudo='sudo '` in ~/.bash_aliases, then do `exsudo erra`.  
 
 ### Customization:
 
