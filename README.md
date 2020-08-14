@@ -1,11 +1,11 @@
 # Catch-Err-All
  A universal command to quick check potential errors and interesting part in any source of log.
 
- ![Android](/sample_output1_android.png?raw=true "Sample output (Android)")
- ![Syslog](/sample_output2_syslog.png?raw=true "Sample output (syslog 1)")
- ![syslog2](/sample_output3_syslog.png?raw=true "Sample output (syslog 2)")
- ![dmesg](/sample_output4_dmesg.png?raw=true "Sample output (dmesg)")
- ![gpu](/sample_output5_gpu.png?raw=true "Sample output (gpu)")
+ ![Android](/images/ample_output1_android.png?raw=true "Sample output (Android)")
+ ![Syslog](/images/sample_output2_syslog.png?raw=true "Sample output (syslog 1)")
+ ![syslog2](/images/sample_output3_syslog.png?raw=true "Sample output (syslog 2)")
+ ![dmesg](/images/sample_output4_dmesg.png?raw=true "Sample output (dmesg)")
+ ![gpu](/images/sample_output5_gpu.png?raw=true "Sample output (gpu)")
 
 
 ### Setup:
