@@ -28,7 +28,7 @@ grep --color=auto -niP \
 \
 '|dis[-_ ]?a[-_ ]?[a-z]{2,}'\
 \
-'|dis[-_ ]?s(?!erta|dissem|em)'\
+'|dis[-_ ]?s(?!erta|em)'\
 \
 '|(dis)?mis[-_ ]?(?!c(?=\b|_)|sion|sy)'\
 \
