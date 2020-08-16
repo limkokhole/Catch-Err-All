@@ -33,7 +33,7 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 [6] Use `err -v` to view non-match lines, i.e. normal log.  
 
-[7] Since default already `-n`, you can add `-nn` (i.e. no line number) options to `err` or `erra` to hide line number.  
+[7] Since default already `-n`, you can use `-nn` (i.e. no line number) option on `err` or `erra` to hide line number.  
 
 ### Customization:
 
