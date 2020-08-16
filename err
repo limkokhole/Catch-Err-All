@@ -47,7 +47,7 @@ grep --color=auto "$opts" \
 \
 '|exception|throw|fatal|(?<!ov)err(?!ide|eq)|fail|stop|crash|(?<!au)die|dying|dead|death|(?<!de)fault|oops|(?<!de)bug|kill|halt|bad(?!ge)|wors[et]|terrible|aw(ful|kward)|trouble| pain((?=\b|_)|e|i|n)|abort|abrt|caus(e|ing)|due[-_ ]?to|cautio|care|attention|mind|problem|dump|cannot|n['"'"'’]t|caught|over[-_ ]?flow(?!\.com)|over[-_ ]?he|flood|los[est]|block(ed|ing)|([^bc]|(?<=\b|_))lock|disco(?!ver)|clos(e|ing)|(?<!live|dis)patch|doubt|questionabl|possibl|expect(?!\-ct)|time[-_ ]?out|time['"'"'’]s |time (is |was )?up|expir|resolv(e|ing)|freez(e|ing)|den(ied|ial|y)|differ'\
 \
-'|((?<=\b|_)|un[-_ ]?)re(cover|scu|vo[ck]|ject|fus|stor|attempt)'\
+'|((?<=\b|_)|un[-_ ]?)re[-]?(cover|scu|vo[ck]|ject|fus|stor|attempt)'\
 \
 '|(^\s+|   |\t *|\t)(at|in)\s+|uaf|duplicate|please|pl[sz]|errno|corrupt|interrupt|already|violat|suck|fuck|(?<!s)hell(?!o)|sorry|difficult|danger|cident|night[ -]?mare| safer|prevent|(?<!w)avoid| late(?!ncy)|(?<!no)delay|(im|pre)mature|urgen[ct]| odd|wrong|f[ae]ll|abandon|inclin| sink|drop(?!box)|break|what |surpris|remov[aei](?!ble)|delet(e|ing)|chance|cancel|dangl[ei]|(?<!pre|post)fix|detach|colli[ds]|ban((?=\b|_)|ned)|forbid|experienc(e|ing)| h[au]ng|hack| sense|defunct|off[-_]?line|exploit|mal(ware|form|func)| lag((?=\b|_)|ging)|(?<!(/))\?|(?<!<|\[\s)!'"$all_suffix" "$@"
 
