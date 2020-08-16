@@ -21,17 +21,19 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 ### How to use:
 
-[1] Similar to `grep`, i.e. `err /var/log/syslog`, `adb logcat | err`, `tail -f /var/log/syslog | err`
+[1] Similar to `grep`, i.e. `err /var/log/syslog`, `adb logcat | err`, `tail -f /var/log/syslog | err`  
 
-[2] `erra` to show all lines, such as `dmesg | erra`, `adb logcat | erra`. 
+[2] `erra` to show all lines, such as `dmesg | erra`, `adb logcat | erra`.  
 
-[3] Based on above setup, you can also manually type `-all` option when using `err`, without require you edit left `err` to `erra`.
+[3] Based on above setup, you can also manually type `-all` option when using `err`, without require you edit left `err` to `erra`.  
 
-[4] This command is wrapper of `grep --color=auto -niP`, you can add grep option as usual, such as `-r`.
+[4] This command is wrapper of `grep --color=auto -niP`, you can add grep option as usual, such as `-r`.  
 
-[5] In addition `erra`, use `-A`/`-B`/`-C` grep options with `err`(not `erra`) to limit the lines.
+[5] In addition `erra`, use `-A`/`-B`/`-C` grep options with `err`(not `erra`) to limit the lines.  
 
-[6] Use `err -v` to view non-match lines, i.e. normal log.
+[6] Use `err -v` to view non-match lines, i.e. normal log.  
+
+[7] Since default already `-n`, you can add `-nn` (i.e. no line number) options to `err` or `erra` to hide line number.  
 
 ### Customization:
 

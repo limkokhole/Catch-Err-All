@@ -1,14 +1,18 @@
 #!/bin/bash
+opts='-niP'
 for arg do
   shift
   if [ "$arg" = "-all" ] || [ "$arg" = "--all" ]; then
          all_suffix='|'
 	 continue
+  elif [ "$arg" = "-nn" ] || [ "$arg" = "--nn" ]; then
+         opts='-iP'
+	 continue
   fi
   set -- "$@" "$arg"
 done
 
-grep --color=auto -niP \
+grep --color=auto "$opts" \
 \
 \
 '(trac(e|ing)|likely| debt|must)(?=\b|_)'\
