@@ -6,6 +6,8 @@
  ![syslog2](/images/sample_output3_syslog.png?raw=true "Sample output (syslog 2)")
  ![dmesg](/images/sample_output4_dmesg.png?raw=true "Sample output (dmesg)")
  ![gpu](/images/sample_output5_gpu.png?raw=true "Sample output (gpu)")
+ ![gpu](/images/sample_output6_python.png?raw=true "Sample output (python)")
+ ![gpu](/images/sample_output7_apt.png?raw=true "Sample output (apt)")
 
 
 ### Setup:
