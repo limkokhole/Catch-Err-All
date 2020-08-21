@@ -41,21 +41,23 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 ### Customization:
 
-[1] Patterns like "err" covers both "errno" and "interrupt". To avoid `internal PCRE error: 0` error, I need fewer regex `()` if possible. You can check if your regex exceed default maximum by `echo malware | err`, it will produces `internal PCRE error: 0` error if regex too long.
+[1] Patterns such as "err" covers "interrupt" but I put "interrupt" separately to prevent confusion in a glance. 
 
-[2] The negate style is in the format:
+[2] To avoid `internal PCRE error: 0` error, I need regex `()` as few as possible. You can check if your regex exceed default maximum by `echo malware | err`, it will produces `internal PCRE error: 0` error if regex too long. I noticed adding more entries in existing (a|b|c|...) doesn't causes this error. 
+
+[3] The negate style is in the format:
 
 `(?<!negate_prefix_1|negate_prefix_2)wanted(?!negate_postfix_1|negate_postfix_2)`
 
 , which the postfix don't have extra `<` unlike prefix.
 
-[3] `(?<=\b|_)` (opening boundary) and `(?=\b|_)` (closing boundary) acts as word boundary `\b` except it allow underscore `_`
+[4] `(?<=\b|_)` (opening boundary) and `(?=\b|_)` (closing boundary) acts as word boundary `\b` except it allow underscore `_`
 
-[4] This command composes of 5 main sections divided by double `\\`, i.e. `(?=\b|_)` on right, `(?<=\b|_)` on left, `(?<=\b|_)` and `(?=\b|_)` on both side, `\b` on both side, and nothing on both side. Each of them may divide into subsection by `\`, to easy to see prefix un/in/...etc—(many words) parts. Note that the patterns shouldn't strict to correct spelling, since log is written by anyone and need to allow incorrect spelling. And of course, nothing I can do if typo in log.
+[5] This command composes of 5 main sections divided by double `\\`, i.e. `(?=\b|_)` on right, `(?<=\b|_)` on left, `(?<=\b|_)` and `(?=\b|_)` on both side, `\b` on both side, and nothing on both side. Each of them may divide into subsection by `\`, to easy to see prefix un/in/...etc—(many words) parts. Note that the patterns shouldn't strict to correct spelling, since log is written by anyone and need to allow incorrect spelling. And of course, nothing I can do if typo in log.
 
-[5] The last two are "?" and "!" which normally indicate louder expression in log. But ! exclude <! html tag and `[ !` shell patterns to reduce noises, while still allow != because != quite often used to express something mismatch.
+[6] The last two are "?" and "!" which normally indicate louder expression in log. But ! exclude <! html tag and `[ !` shell patterns to reduce noises, while still allow != because != quite often used to express something mismatch.
 
-[6] Between `'\` , next line `\` , or `'`, no extra space. Keep in mind don't put double `|`, i.e. `||` manually in the script which causes shows all lines.
+[7] Between `'\` , next line `\` , or `'`, no extra space. Keep in mind don't put double `|`, i.e. `||` manually in the script which causes shows all lines.
 
-[7] You can customize matched color of `grep` with e.g. `export GREP_COLORS='ms=01;33'`.
+[8] You can customize matched color of `grep` with e.g. `export GREP_COLORS='ms=01;33'`.
 
