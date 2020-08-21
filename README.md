@@ -41,7 +41,7 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 ### Customization:
 
-[1] Patterns like "err" covers both "errno" and "interrupt". To avoid `internal PCRE error: 0` error, I need shorter regex if possible.
+[1] Patterns like "err" covers both "errno" and "interrupt". To avoid `internal PCRE error: 0` error, I need shorter regex if possible. You can check if your regex exceed default maximum by `echo malware | err`.
 
 [2] The negate style is in the format:
 
