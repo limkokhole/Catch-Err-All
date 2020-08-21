@@ -51,7 +51,7 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 , which the postfix don't have extra `<` unlike prefix.
 
-This format useful to avoid treats common tag `DEBUG` as `bug`.
+This format useful to avoid treats common tag `DEBUG` as important keyword `bug`.
 
 [4] `(?<=\b|_)` (opening boundary) and `(?=\b|_)` (closing boundary) acts as word boundary `\b` except it allow underscore `_`
 
