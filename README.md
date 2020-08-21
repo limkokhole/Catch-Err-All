@@ -41,7 +41,7 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 ### Customization:
 
-[1] Patterns like "err" covers both "errno" and "interrupt", but I separate them to easier modify/recognize. You can remove them if you prefer shorter patterns.
+[1] Patterns like "err" covers both "errno" and "interrupt". To avoid `internal PCRE error: 0` error, I need shorter regex if possible.
 
 [2] The negate style is in the format:
 
