@@ -43,13 +43,15 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 [1] Patterns such as "err" covers "interrupt" but I put "interrupt" separately to easier distinguish in a glance. 
 
-[2] To avoid `internal PCRE error: 0` error, I need regex `()` as few as possible. You can check if your regex exceed default maximum by `echo malware | err`, it will produces `internal PCRE error: 0` error if regex too long. I noticed adding more entries in existing (a|b|c|...) doesn't causes this error. 
+[2] To avoid `internal PCRE error: 0` error, I need regex `()` as few as possible. You can check if your regex exceed default maximum by `echo malware | err`, it will produces `internal PCRE error: 0` error if regex too long. I noticed adding more entries in existing `(a|b|c|...)` and more `[-]?` doesn't causes this error. 
 
 [3] The negate style is in the format:
 
 `(?<!negate_prefix_1|negate_prefix_2)wanted(?!negate_postfix_1|negate_postfix_2)`
 
 , which the postfix don't have extra `<` unlike prefix.
+
+This format useful to avoid treats common tag `DEBUG` as `bug`.
 
 [4] `(?<=\b|_)` (opening boundary) and `(?=\b|_)` (closing boundary) acts as word boundary `\b` except it allow underscore `_`
 
