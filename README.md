@@ -57,3 +57,5 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 [6] Between `'\` , next line `\` , or `'`, no extra space. Keep in mind don't put double `|`, i.e. `||` manually in the script which causes shows all lines.
 
+[7] You can customize matched color of `grep` with e.g. `export GREP_COLORS='ms=01;33'`.
+
