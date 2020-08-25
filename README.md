@@ -41,7 +41,7 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 ### Customization:
 
-[1] Patterns such as "err" covers "interrupt" but I put "interrupt" separately to easier distinguish in a glance. 
+[1] Patterns such as "err" covers "errno" and "interrupt" but I separate them to easier distinguish in a glance. 
 
 [2] To avoid `internal PCRE error: 0` error, I need regex `()` as few as possible. You can check if your regex exceed default maximum by `echo malware | err`, it will produces `internal PCRE error: 0` error if regex too long. I noticed adding more entries in existing `(a|b|c|...)` and more `[-]?` doesn't causes this error. 
 
