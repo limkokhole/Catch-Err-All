@@ -28,7 +28,7 @@ Sample of use case:
  strace & wget:  
  ![wget](/images/sample_output9_strace_and_wget.png?raw=true "Sample output (strace & wget)")
 
- check grammar:   
+ check grammar ("bigger than", not "bigger then", lol):   
  ![grammar](/images/sample_output10_check_grammar.png?raw=true "Sample output (check wrong grammar)")
 
 
