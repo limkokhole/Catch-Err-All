@@ -1,7 +1,7 @@
 # Catch-Err-All
  A universal command to quick check potential errors and interesting part in any source of log.
 
-Sample of use case:
+### Sample of use case:
 
  adb logcat:  
  ![Android](/images/sample_output1_android.png?raw=true "Sample output (Android)")
