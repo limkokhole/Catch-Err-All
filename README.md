@@ -10,6 +10,7 @@
  ![apt](/images/sample_output7_apt.png?raw=true "Sample output (apt)")
  ![ovpn](/images/sample_output8_ovpn.png?raw=true "Sample output (ovpn)")
  ![wget](/images/sample_output9_strace_and_wget.png?raw=true "Sample output (strace & wget)")
+ ![grammar](/images/sample_output10_check_grammar.png?raw=true "Sample output (check wrong grammar)")
 
 
 ### Setup:
