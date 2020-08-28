@@ -1,15 +1,34 @@
 # Catch-Err-All
  A universal command to quick check potential errors and interesting part in any source of log.
 
+Sample of use case:
+
+ adb logcat:  
  ![Android](/images/sample_output1_android.png?raw=true "Sample output (Android)")
+
+ syslog:  
  ![Syslog](/images/sample_output2_syslog.png?raw=true "Sample output (syslog 1)")
  ![syslog2](/images/sample_output3_syslog.png?raw=true "Sample output (syslog 2)")
+
+  dmesg:  
  ![dmesg](/images/sample_output4_dmesg.png?raw=true "Sample output (dmesg)")
+
+  gpu:  
  ![gpu](/images/sample_output5_gpu.png?raw=true "Sample output (gpu)")
+
+  python:  
  ![python](/images/sample_output6_python.png?raw=true "Sample output (python)")
+
+  apt:  
  ![apt](/images/sample_output7_apt.png?raw=true "Sample output (apt)")
+
+  vpn:  
  ![ovpn](/images/sample_output8_ovpn.png?raw=true "Sample output (ovpn)")
+
+ strace & wget:  
  ![wget](/images/sample_output9_strace_and_wget.png?raw=true "Sample output (strace & wget)")
+
+ check grammar:   
  ![grammar](/images/sample_output10_check_grammar.png?raw=true "Sample output (check wrong grammar)")
 
 
