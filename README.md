@@ -28,10 +28,6 @@
  strace & wget:  
  ![wget](/images/sample_output9_strace_and_wget.png?raw=true "Sample output (strace & wget)")
 
- Bonus: Grammar check ("bigger than", not "bigger then", lol) (`-v` means normal log, if you expect to see warning then either: my bug OR uncommon keywords OR non-warning keywords OR typo OR bad grammar):   
- ![grammar](/images/sample_output10_check_grammar.png?raw=true "Sample output (check wrong grammar)")
-
-
 ### Setup:
 
 Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
