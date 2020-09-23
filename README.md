@@ -55,6 +55,8 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 [7] Since default already `-n`, you can use `-nn` (i.e. no line number) option on `err` or `erra` to hide line number.  
 
+[8] Do `foo_command | grep --line-buffered bar | erra` OR `foo_command | unbuffer -p bar | erra` if want to add extra grep.
+
 ### Customization:
 
 [1] Patterns such as "err" covers "errno" and "interrupt" but I separate them to easier distinguish in a glance. 
