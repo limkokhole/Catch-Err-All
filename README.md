@@ -1,7 +1,9 @@
 # Catch-Err-All
  A universal command to quick check potential errors and interesting part in any source of log. 
 
- This tool simulates how a human read and identify error/bug keywords in statements based on my experience, highlight that keywords to spot in a glance.
+ This tool simulates how a human read and identify error/bug keywords in statements, highlight that keywords to spot in a glance.
+ 
+ The chosen keywords relevant to error/bug/interest part are based on my experience on reading computer log.
 
 ### Sample of use case:
 
