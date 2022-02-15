@@ -3,7 +3,7 @@
 
  This tool simulates how a human read and identify error/bug keywords in statements, highlight that keywords to spot in a glance.
  
- The chosen keywords relevant to error/bug/interest part are based on my experience on reading computer log.
+ The chosen keywords relevant to error/bug/important/interesting part are based on my experience on reading computer log.
 
 ### Sample of use case:
 
