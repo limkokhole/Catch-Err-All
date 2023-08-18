@@ -65,7 +65,7 @@ grep --color=auto "$opts" \
 '|\b(?<![.])out\b'\
 \
 \
-'|exception|throw|fatal|(?<![\s_-]pref)err(?!eq)|emerg|sever((?=\b|_)|e|[a-z]*ly)|alert|crit|warn|fail|stop|crash|(?<!au)die|dying|dead|death|doom|(?<!de)fault|oops|(?<!de)bug|kill|halt|bad(?!ge)|wors[et]|terrible|aw(ful|kward)|trouble| pain((?=\b|_)|e|i|n)|abort|abrt|caus(e|ing)|due[-_ ]?to|cautio|care|attention|mind|problem|dump|cannot|n['"'"'’]t|caught|over[-_ ]?flow(?!\.com)|over[-_ ]?he|flood|los[est]|block(ed|ing)|([^bc]|(?<=\b|_))lock|disco(?!ver)|clos(e|ing)|(?<!live|dis)patch|doubt|questionabl|possibl|expect(?!\-ct)|time[-_ ]?out|time['"'"'’]s |time (is |was )?up|expir|resolv(e|ing)|freez(e|ing)|den(ied|ial|y)|differ'\
+'|exception|.*evil.*|throw|fatal|(?<![\s_-]pref)err(?!eq)|emerg|sever((?=\b|_)|e|[a-z]*ly)|alert|crit|warn|fail|stop|crash|(?<!au)die|dying|dead|death|doom|(?<!de)fault|oops|(?<!de)bug|kill|halt|bad(?!ge)|wors[et]|terrible|aw(ful|kward)|trouble| pain((?=\b|_)|e|i|n)|abort|abrt|caus(e|ing)|due[-_ ]?to|cautio|care|attention|mind|problem|dump|cannot|n['"'"'’]t|caught|over[-_ ]?flow(?!\.com)|over[-_ ]?he|flood|los[est]|block(ed|ing)|([^bc]|(?<=\b|_))lock|disco(?!ver)|clos(e|ing)|(?<!live|dis)patch|doubt|questionabl|possibl|expect(?!\-ct)|time[-_ ]?out|time['"'"'’]s |time (is |was )?up|expir|resolv(e|ing)|freez(e|ing)|den(ied|ial|y)|differ'\
 \
 '|((?<=\b|_)|un[-_ ]?)re[-]?(cover|scu|vo[ck]|ject|fus|stor|attempt)'\
 \
