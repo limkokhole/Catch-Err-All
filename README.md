@@ -77,7 +77,7 @@ This format useful to avoid treats common tag `DEBUG` as important keyword `bug`
 
 [4] `(?<=\b|_)` (opening boundary) and `(?=\b|_)` (closing boundary) acts as word boundary `\b` except it allow underscore `_`
 
-[5] This command composes of 6 main sections divided by double `\\`, i.e. `(?=\b|_)` on right, `(?<=\b|_)` on left, `(?<=\b|_)` and `(?=\b|_)` on both side, `\b\w*` on both size, `\b` on both side, and nothing on both side. Each of them may divide into subsection by `\`, to easy to see prefix un/in/...etc—(many words) parts. Note that the patterns shouldn't strict to correct spelling, since log is written by anyone and need to allow incorrect spelling. And of course, nothing I can do if typo in log.
+[5] This command composes of 6 main sections divided by double `\\`(2 continuous lines of `\`), i.e. `(?=\b|_)` on right, `(?<=\b|_)` on left, `(?<=\b|_)` and `(?=\b|_)` on both side, `\b\w*` on both size, `\b` on both side, and nothing on both side. Each of them may divide into subsection by `\`, to easy to see prefix un/in/...etc—(many words) parts. Note that the patterns shouldn't strict to correct spelling, since log is written by anyone and need to allow incorrect spelling. And of course, nothing I can do if typo in log.
 
 [6] The last two are "?" and "!" which normally indicate louder expression in log. But ! exclude <! html tag and `[ !` shell patterns to reduce noises, while still allow != because != quite often used to express something mismatch.
 
