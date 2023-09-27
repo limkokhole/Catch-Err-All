@@ -1,9 +1,9 @@
 # Catch-Err-All
- A universal command to quick check potential errors and interesting part in any source of log. 
+A universal command for quickly checking potential errors and highlighting interesting parts in any log source.
 
- This tool simulates how a human read and identify error/bug keywords in statements, highlight that keywords to spot in a glance.
- 
- The chosen keywords relevant to error/bug/important/interesting part are based on my experience on reading computer log.
+This tool mimics the way humans read and identify error or bug-related keywords in statements. It then highlights these keywords, allowing users to spot them at a glance. You don't need billion-dollar AI hardware to achieve this!
+
+The selected keywords, which pertain to errors, bugs, and other important or interesting parts, are based on my experience reading computer logs.
 
 ### Sample of use case:
 
@@ -59,7 +59,7 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 [7] Since default already `-n`, you can use `-nn` (i.e. no line number) option on `err` or `erra` to hide line number.  
 
-[8] Do `foo_command | grep --line-buffered bar | erra` OR `foo_command | unbuffer -p bar | erra` if want to add extra grep.
+[8] Do `foo_command | grep --line-buffered bar | erra` OR `foo_command | unbuffer -p other_command bar | erra` if want to add extra grep or command.
 
 ### Customization:
 
