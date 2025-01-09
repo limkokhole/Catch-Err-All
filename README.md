@@ -45,9 +45,9 @@ Make 2 commands, `erra` (i.e. shows "a"ll lines) and `err`:
 
 ### How to use:
 
-[1] Similar to `grep`, i.e. `err /var/log/syslog`, `adb logcat |& err`, `tail -f /var/log/syslog |& err`  
+[1] Similar to `grep`, e.g., `err /var/log/syslog`, `adb logcat |& err`, and `tail -f /var/log/syslog |& err`. The `|&` operator means piping both STDOUT and STDERR.
 
-[2] `erra` to show all lines, such as `dmesg |& erra`, `adb logcat |& erra`.  
+[2] Use `erra` to show all lines, including non-matched lines, e.g., `dmesg |& erra` or `adb logcat |& erra`.
 
 [3] Based on above setup, you can also manually type `-all` option when using `err`, without require you edit left `err` to `erra`.  
 
